@@ -1,8 +1,8 @@
-﻿# UHA Study Prioritizer
+# UHA Study Prioritizer
 
 > Smart study prioritization for Universite de Haute-Alsace students
 
-**Languages:** [English](README.md) | [FranÃ§ais](README.fr.md) | [Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©](README.ar.md)
+**Languages:** [English](README.md) | [Francais](README.fr.md) | [Arabic](README.ar.md)
 
 ---
 
@@ -40,7 +40,7 @@ npm run dev                                   # Start at http://localhost:3000
 
 **Priority Formula:**
 ```
-score = (weight Ã— importance Ã— difficulty) / daysLeft + (hoursLeft Ã— 2)
+score = (weight ?? importance ?? difficulty) / daysLeft + (hoursLeft ?? 2)
 ```
 
 ## Documentation
@@ -98,7 +98,7 @@ Full guide: [DEPLOYMENT.md](DEPLOYMENT.md)
 **Database errors?** Run `npx prisma db push`  
 **Can't login?** Check `.env` has `NEXTAUTH_SECRET`
 
-More: [INSTALL.md](INSTALL.md#troubleshooting)
+More: [INSTALL.md](INSTALL.md)
 
 ## Support
 
