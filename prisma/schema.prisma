@@ -1,0 +1,105 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                String          @id @default(cuid())
+  email             String          @unique
+  password          String
+  name              String?
+  calendarUrl       String?
+  emailSyncEnabled  Boolean         @default(false)
+  lastCalendarSync  DateTime?
+  lastEmailSync     DateTime?
+  createdAt         DateTime        @default(now())
+  updatedAt         DateTime        @updatedAt
+  subjects          Subject[]
+  assessments       Assessment[]
+  tasks             Task[]
+  calendarEvents    CalendarEvent[]
+  emailSignals      EmailSignal[]
+}
+
+model Subject {
+  id          String       @id @default(cuid())
+  userId      String
+  user        User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name        String
+  difficulty  Int
+  importance  Int
+  startDate   DateTime
+  endDate     DateTime
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  assessments Assessment[]
+  tasks       Task[]
+}
+
+model Assessment {
+  id              String    @id @default(cuid())
+  userId          String
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  subjectId       String
+  subject         Subject   @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  title           String
+  type            String
+  dueAt           DateTime
+  weightPct       Float
+  estHoursLeft    Float
+  status          String    @default("pending")
+  overrideDueAt   DateTime?
+  overrideReason  String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model Task {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  subjectId   String?
+  subject     Subject?  @relation(fields: [subjectId], references: [id], onDelete: SetNull)
+  title       String
+  estMinutes  Int
+  energy      String
+  dueAt       DateTime?
+  status      String    @default("todo")
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model CalendarEvent {
+  id           String   @id @default(cuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  source       String
+  externalId   String?
+  title        String
+  startsAt     DateTime
+  endsAt       DateTime
+  location     String?
+  status       String   @default("scheduled")
+  lastSyncedAt DateTime @default(now())
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model EmailSignal {
+  id               String   @id @default(cuid())
+  userId           String
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  source           String
+  externalId       String?
+  receivedAt       DateTime
+  subject          String
+  snippet          String
+  detectedType     String
+  detectedEntities String
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
