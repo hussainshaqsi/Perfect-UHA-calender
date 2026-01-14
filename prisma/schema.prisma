@@ -12,10 +12,9 @@ model User {
   email             String          @unique
   password          String
   name              String?
-  calendarUrl       String?
+  iCalUrl           String?
   emailSyncEnabled  Boolean         @default(false)
-  lastCalendarSync  DateTime?
-  lastEmailSync     DateTime?
+  emailLastSyncedAt DateTime?
   createdAt         DateTime        @default(now())
   updatedAt         DateTime        @updatedAt
   subjects          Subject[]
@@ -30,10 +29,9 @@ model Subject {
   userId      String
   user        User         @relation(fields: [userId], references: [id], onDelete: Cascade)
   name        String
-  difficulty  Int
-  importance  Int
-  startDate   DateTime
-  endDate     DateTime
+  code        String?
+  credits     Int?
+  semester    String?
   createdAt   DateTime     @default(now())
   updatedAt   DateTime     @updatedAt
   assessments Assessment[]
@@ -46,60 +44,57 @@ model Assessment {
   user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   subjectId       String
   subject         Subject   @relation(fields: [subjectId], references: [id], onDelete: Cascade)
-  title           String
+  name            String
   type            String
-  dueAt           DateTime
-  weightPct       Float
-  estHoursLeft    Float
+  dueDate         DateTime
+  weight          Float
+  estimatedHours  Float
   status          String    @default("pending")
-  overrideDueAt   DateTime?
-  overrideReason  String?
   createdAt       DateTime  @default(now())
   updatedAt       DateTime  @updatedAt
+  tasks           Task[]
 }
 
 model Task {
-  id          String    @id @default(cuid())
-  userId      String
-  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
-  subjectId   String?
-  subject     Subject?  @relation(fields: [subjectId], references: [id], onDelete: SetNull)
-  title       String
-  estMinutes  Int
-  energy      String
-  dueAt       DateTime?
-  status      String    @default("todo")
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
+  id           String      @id @default(cuid())
+  userId       String
+  user         User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  subjectId    String?
+  subject      Subject?    @relation(fields: [subjectId], references: [id], onDelete: SetNull)
+  assessmentId String?
+  assessment   Assessment? @relation(fields: [assessmentId], references: [id], onDelete: SetNull)
+  description  String
+  priority     String?
+  dueDate      DateTime?
+  completed    Boolean     @default(false)
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
 }
 
 model CalendarEvent {
-  id           String   @id @default(cuid())
-  userId       String
-  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  source       String
-  externalId   String?
-  title        String
-  startsAt     DateTime
-  endsAt       DateTime
-  location     String?
-  status       String   @default("scheduled")
-  lastSyncedAt DateTime @default(now())
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  externalId  String?
+  title       String
+  description String?
+  startDate   DateTime
+  endDate     DateTime
+  location    String?
+  isCancelled Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }
 
 model EmailSignal {
-  id               String   @id @default(cuid())
-  userId           String
-  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  source           String
-  externalId       String?
-  receivedAt       DateTime
-  subject          String
-  snippet          String
-  detectedType     String
-  detectedEntities String
-  createdAt        DateTime @default(now())
-  updatedAt        DateTime @updatedAt
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  subject    String
+  body       String
+  reason     String
+  confidence Float
+  receivedAt DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
 }
