@@ -1,0 +1,130 @@
+═══════════════════════════════════════════════════════════════════════
+  🎓 GITHUB EDUCATION DEPLOYMENT - GET $670/YEAR FREE!
+═══════════════════════════════════════════════════════════════════════
+
+YOU HAVE ACCESS TO:
+✅ Railway: $20/month FREE (normally $5)
+✅ Vercel Pro: FREE
+✅ DigitalOcean: $200 credit
+✅ Namecheap: 1 FREE domain (.me)
+✅ 100+ other premium tools!
+
+TOTAL VALUE: $670+/year COMPLETELY FREE FOR STUDENTS!
+
+═══════════════════════════════════════════════════════════════════════
+
+STEP 1: ACTIVATE STUDENT PACK (If not done)
+→ https://education.github.com/pack
+→ Click "Get Your Pack"
+→ Verify with your student email
+
+STEP 2: CLAIM RAILWAY CREDITS
+→ https://education.github.com/pack/offers
+→ Search "Railway"
+→ Click "Get access by connecting GitHub"
+→ Sign in/up with GitHub
+→ $20/month credits AUTO-APPLIED! ✅
+
+STEP 3: DEPLOY YOUR APP
+→ Go to: https://railway.app
+→ Click "New Project"
+→ "Deploy from GitHub repo"
+→ Choose: hussainshaqsi/Perfect-UHA-calender
+
+STEP 4: ADD DATABASE
+→ Click "+ New"
+→ "Database" → "Add PostgreSQL"
+→ Done! (auto-connects)
+
+STEP 5: ADD ENVIRONMENT VARIABLES
+Click on your app (not database) → "Variables":
+
+┌─────────────────────────────────────────────────────────────────┐
+│ NEXTAUTH_SECRET                                                 │
+│ APMD7IlwjgxUnbz3N6jcYKTdIjU1P3+BhmpYnGDjRgk=                    │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│ NODE_ENV                                                        │
+│ production                                                      │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│ DATABASE_URL                                                    │
+│ (Click "Add Reference" → PostgreSQL → DATABASE_URL)            │
+└─────────────────────────────────────────────────────────────────┘
+
+STEP 6: CONFIGURE BUILD
+→ Go to "Settings" tab
+
+Build Command:
+npm run railway:build
+
+Start Command:
+npm run railway:start
+
+→ Click "Save"
+
+STEP 7: DEPLOY
+→ Click "Deploy" (top right)
+→ Wait 2-3 minutes
+→ Watch for "Deployment successful" ✅
+
+STEP 8: GET YOUR URL
+→ "Settings" → "Domains"
+→ Click "Generate Domain"
+→ Copy: https://xxx.up.railway.app
+
+STEP 9: FINAL VARIABLE
+→ Back to "Variables"
+→ Add:
+
+┌─────────────────────────────────────────────────────────────────┐
+│ NEXTAUTH_URL                                                    │
+│ https://your-actual-railway-url.up.railway.app                  │
+└─────────────────────────────────────────────────────────────────┘
+
+Auto-redeploys! ✅
+
+STEP 10: TEST! 🎉
+→ Visit your URL
+→ Register (use @uha.fr email)
+→ Login
+→ Enjoy!
+
+═══════════════════════════════════════════════════════════════════════
+
+BONUS: GET A FREE DOMAIN!
+
+→ https://education.github.com/pack/offers
+→ Search "Namecheap"
+→ Get FREE .me domain for 1 year
+→ Register: uha-study.me (or whatever you want)
+→ Point to Railway
+→ Add in Railway: Settings → Domains → Custom Domain
+
+═══════════════════════════════════════════════════════════════════════
+
+WHAT YOU'RE GETTING FOR FREE:
+• Railway hosting: $240/year
+• PostgreSQL database: $120/year
+• SSL certificate: $50/year
+• Custom domain: $20/year
+• Vercel Pro (alternative): $240/year
+• Premium support & monitoring
+
+TOTAL: $670+/year ABSOLUTELY FREE! 🎓
+
+═══════════════════════════════════════════════════════════════════════
+
+COST PER MONTH: $0
+AUTO-DEPLOY: Yes (push to GitHub = auto deploy)
+DURATION: 1 year (renewable while student)
+
+DETAILED GUIDE: See DEPLOY_WITH_GITHUB_EDUCATION.md
+
+═══════════════════════════════════════════════════════════════════════
+
+START NOW: https://railway.app
+
+🚀 Professional hosting, zero cost, 100% student power!
