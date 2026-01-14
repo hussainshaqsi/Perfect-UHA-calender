@@ -1,57 +1,59 @@
-﻿# Ù…Ù†Ø¸Ù… Ø§Ù„Ø¯Ø±Ø§Ø³Ø© UHA
+# UHA Study Prioritizer
 
-> ØªÙ†Ø¸ÙŠÙ… Ø°ÙƒÙŠ Ù„Ù„Ø¯Ø±Ø§Ø³Ø© Ù„Ø·Ù„Ø§Ø¨ Ø¬Ø§Ù…Ø¹Ø© Ù‡ÙˆØª-Ø§Ù„Ø²Ø§Ø³
+**Arabic Version - ???????????? ??????????????**
 
-**Ø§Ù„Ù„ØºØ§Øª:** [English](README.md) | [FranÃ§ais](README.fr.md) | [Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©](README.ar.md)
+> Smart study prioritization for Universite de Haute-Alsace students
+
+**Languages:** [English](README.md) | [Francais](README.fr.md) | [Arabic](README.ar.md)
 
 ---
 
-## Ø§Ù„Ø¨Ø¯Ø¡ Ø§Ù„Ø³Ø±ÙŠØ¹
+## Quick Start
 
-**3 Ø£ÙˆØ§Ù…Ø± Ù„Ù„Ø¨Ø¯Ø¡:**
+**3 commands to get started:**
 
 ```bash
-npm install                                    # ØªØ«Ø¨ÙŠØª Ø§Ù„Ù…ØªØ·Ù„Ø¨Ø§Øª  
-npx prisma generate && npx prisma db push     # Ø¥Ø¹Ø¯Ø§Ø¯ Ù‚Ø§Ø¹Ø¯Ø© Ø§Ù„Ø¨ÙŠØ§Ù†Ø§Øª
-npm run dev                                   # Ø§Ù„Ø¨Ø¯Ø¡ Ø¹Ù„Ù‰ http://localhost:3000
+npm install                                    # Install dependencies  
+npx prisma generate && npx prisma db push     # Setup database
+npm run dev                                   # Start at http://localhost:3000
 ```
 
-**Ø§Ù„Ù…Ø±Ø© Ø§Ù„Ø£ÙˆÙ„Ù‰ØŸ** Ø­Ù…Ù„ Node.js Ù…Ù† [nodejs.org](https://nodejs.org) Ø«Ù… Ù†ÙØ° Ø§Ù„Ø£ÙˆØ§Ù…Ø± Ø£Ø¹Ù„Ø§Ù‡
+**First time?** Download Node.js from [nodejs.org](https://nodejs.org) then run commands above
 
-**Ø§Ù„Ø¯Ù„ÙŠÙ„ Ø§Ù„ÙƒØ§Ù…Ù„:** [INSTALL.md](INSTALL.md)
+**Complete Guide:** [INSTALL.md](INSTALL.md)
 
-## Ø§Ù„Ù…Ù…ÙŠØ²Ø§Øª
+## Features
 
-- **Ù…ØµØ§Ø¯Ù‚Ø© UHA** - Ø³Ø¬Ù„ Ø¨Ø§Ø³ØªØ®Ø¯Ø§Ù… @uha.fr Ø£Ùˆ @etu.uha.fr  
-- **Ù…Ø²Ø§Ù…Ù†Ø© ØªÙ„Ù‚Ø§Ø¦ÙŠØ©** - Ø§Ù„ØµÙ‚ Ø±Ø§Ø¨Ø· iCal Ù…Ø±Ø© ÙˆØ§Ø­Ø¯Ø©ØŒ Ù…Ø²Ø§Ù…Ù†Ø© ÙƒÙ„ Ø³Ø§Ø¹Ø©
-- **Ø£ÙˆÙ„ÙˆÙŠØ§Øª Ø°ÙƒÙŠØ©** - Ø®ÙˆØ§Ø±Ø²Ù…ÙŠØ© Ø°ÙƒØ§Ø¡ Ø§ØµØ·Ù†Ø§Ø¹ÙŠ Ù„Ù„ØªÙˆØµÙŠØ§Øª Ø§Ù„Ø¯Ø±Ø§Ø³ÙŠØ©  
-- **Ù…ØªØ¹Ø¯Ø¯ Ø§Ù„Ù„ØºØ§Øª** - ÙØ±Ù†Ø³ÙŠØŒ Ø¥Ù†Ø¬Ù„ÙŠØ²ÙŠØŒ Ø¹Ø±Ø¨ÙŠ (RTL)
-- **ØªØµÙ…ÙŠÙ… Ù„Ù„Ù…ÙˆØ¨Ø§ÙŠÙ„** - ÙŠØ¹Ù…Ù„ Ø¹Ù„Ù‰ Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø£Ø¬Ù‡Ø²Ø©
-- **ÙƒØ´Ù Ø§Ù„Ø¨Ø±ÙŠØ¯** - ÙƒÙ„Ù…Ø§Øª Ø§Ù„Ø¥Ù„ØºØ§Ø¡ Ø§Ù„ÙØ±Ù†Ø³ÙŠØ©
-- **Ø¥Ø¯Ø§Ø±Ø© Ø§Ù„Ù…Ù‡Ø§Ù…** - ØªÙ†Ø¸ÙŠÙ… Ø­Ø³Ø¨ Ù…Ø³ØªÙˆÙ‰ Ø§Ù„Ø·Ø§Ù‚Ø©
+- **UHA Authentication** - Sign up with @uha.fr or @etu.uha.fr  
+- **Auto Calendar Sync** - Paste iCal URL once, syncs hourly
+- **Smart Priorities** - AI algorithm for study recommendations  
+- **Multi-language** - French, English, Arabic (RTL support in app)
+- **Mobile-First** - Works on all devices
+- **Email Detection** - French cancellation keywords
+- **Task Management** - Energy-based organization
 
-## ÙƒÙŠÙ ÙŠØ¹Ù…Ù„
+## How It Works
 
-1. **Ø³Ø¬Ù„** Ø¨Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø¨Ø±ÙŠØ¯ UHA Ø§Ù„Ø®Ø§Øµ Ø¨Ùƒ
-2. **Ø§Ø±Ø¨Ø·** Ø±Ø§Ø¨Ø· ØªÙ‚ÙˆÙŠÙ… ADE/Moodle
-3. **Ø£Ø¶Ù** Ø§Ù„Ù…ÙˆØ§Ø¯ Ù…Ø¹ ØªÙ‚ÙŠÙŠÙ…Ø§Øª Ø§Ù„ØµØ¹ÙˆØ¨Ø© (1-5)
-4. **ØªØ§Ø¨Ø¹** Ø§Ù„Ø§Ù…ØªØ­Ø§Ù†Ø§Øª ÙˆØ§Ù„Ù…Ø´Ø§Ø±ÙŠØ¹ Ù…Ø¹ Ø§Ù„Ø£ÙˆØ²Ø§Ù†
-5. **Ø§Ø­ØµÙ„** Ø¹Ù„Ù‰ Ø£ÙˆÙ„ÙˆÙŠØ§ØªÙƒ Ø§Ù„Ø´Ø®ØµÙŠØ©!
+1. **Sign up** with your UHA email
+2. **Connect** your ADE/Moodle calendar URL
+3. **Add** subjects with difficulty ratings (1-5)
+4. **Track** exams, SAEs, TPs with weights
+5. **Get** personalized priorities!
 
-**Ù…Ø¹Ø§Ø¯Ù„Ø© Ø§Ù„Ø£ÙˆÙ„ÙˆÙŠØ©:**
+**Priority Formula:**
 ```
-Ø§Ù„Ù†Ù‚Ø§Ø· = (Ø§Ù„ÙˆØ²Ù† Ã— Ø§Ù„Ø£Ù‡Ù…ÙŠØ© Ã— Ø§Ù„ØµØ¹ÙˆØ¨Ø©) / Ø§Ù„Ø£ÙŠØ§Ù… Ø§Ù„Ù…ØªØ¨Ù‚ÙŠØ© + (Ø§Ù„Ø³Ø§Ø¹Ø§Øª Ø§Ù„Ù…ØªØ¨Ù‚ÙŠØ© Ã— 2)
+score = (weight ?? importance ?? difficulty) / daysLeft + (hoursLeft ?? 2)
 ```
 
-## Ø§Ù„ØªÙˆØ«ÙŠÙ‚
+## Documentation
 
-- [INSTALL.md](INSTALL.md) - Ø¯Ù„ÙŠÙ„ Ø§Ù„ØªØ«Ø¨ÙŠØª Ø§Ù„ÙƒØ§Ù…Ù„
-- [QUICKSTART.md](QUICKSTART.md) - Ø¥Ø¹Ø¯Ø§Ø¯ 5 Ø¯Ù‚Ø§Ø¦Ù‚  
-- [DEPLOYMENT.md](DEPLOYMENT.md) - Ø§Ù„Ù†Ø´Ø± Ø¹Ù„Ù‰ Vercel/VPS
+- [INSTALL.md](INSTALL.md) - Complete installation guide
+- [QUICKSTART.md](QUICKSTART.md) - 5-minute setup  
+- [DEPLOYMENT.md](DEPLOYMENT.md) - Deploy to Vercel/VPS
 
-## Ø§Ù„ØªØ«Ø¨ÙŠØª
+## Installation
 
-**ØªØ«Ø¨ÙŠØª Ø³Ø±ÙŠØ¹:**
+**Quick Install:**
 ```bash
 git clone https://github.com/hussainshaqsi/Perfect-UHA-calender.git
 cd Perfect-UHA-calender
@@ -61,55 +63,57 @@ npx prisma generate && npx prisma db push
 npm run dev
 ```
 
-Ø§ÙØªØ­ http://localhost:3000
+Open http://localhost:3000
 
-## Ø¥Ø¹Ø¯Ø§Ø¯ Ø§Ù„Ø¨ÙŠØ¦Ø©
+## Environment Setup
 
-Ø£Ù†Ø´Ø¦ Ù…Ù„Ù `.env`:
+Create `.env` file:
 ```env
 DATABASE_URL="file:./dev.db"
-NEXTAUTH_SECRET="Ø³Ø±Ùƒ-32-Ø­Ø±Ù-Ø¹Ù„Ù‰-Ø§Ù„Ø£Ù‚Ù„"
+NEXTAUTH_SECRET="your-secret-min-32-chars"
 NEXTAUTH_URL="http://localhost:3000"
-CRON_SECRET="Ø³Ø±-Ø¢Ø®Ø±"
+CRON_SECRET="another-secret"
 ```
 
-ØªÙˆÙ„ÙŠØ¯ Ø§Ù„Ø£Ø³Ø±Ø§Ø±: `openssl rand -base64 32`
+Generate secrets: `openssl rand -base64 32`
 
-## Ø§Ù„ØªÙ‚Ù†ÙŠØ§Øª Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…Ø©
+## Tech Stack
 
 - Next.js 14 + TypeScript
 - NextAuth.js + Prisma
 - SQLite / PostgreSQL
 - Tailwind CSS + next-intl
 
-## Ø§Ù„Ù†Ø´Ø±
+## Deploy
 
-**Vercel (Ø§Ù„Ø£Ø³Ù‡Ù„):**
-1. Ø§Ø±Ø¨Ø· Ù…Ø³ØªÙˆØ¯Ø¹ GitHub
-2. Ø£Ø¶Ù Vercel Postgres
-3. Ø¹ÙŠÙ† Ù…ØªØºÙŠØ±Ø§Øª Ø§Ù„Ø¨ÙŠØ¦Ø©
-4. Ø§Ù†Ø´Ø±!
+**Vercel (Easiest):**
+1. Connect GitHub repo
+2. Add Vercel Postgres
+3. Set environment variables
+4. Deploy!
 
-Ø§Ù„Ø¯Ù„ÙŠÙ„ Ø§Ù„ÙƒØ§Ù…Ù„: [DEPLOYMENT.md](DEPLOYMENT.md)
+Full guide: [DEPLOYMENT.md](DEPLOYMENT.md)
 
-## Ø­Ù„ Ø§Ù„Ù…Ø´Ø§ÙƒÙ„
+## Troubleshooting
 
-**Ù„Ø§ ÙŠÙ…ÙƒÙ† Ø§Ù„ØªØ«Ø¨ÙŠØªØŸ** Ø«Ø¨Øª Node.js Ù…Ù† [nodejs.org](https://nodejs.org)  
-**Ø£Ø®Ø·Ø§Ø¡ Ù‚Ø§Ø¹Ø¯Ø© Ø§Ù„Ø¨ÙŠØ§Ù†Ø§ØªØŸ** Ù†ÙØ° `npx prisma db push`  
-**Ù„Ø§ ÙŠÙ…ÙƒÙ† ØªØ³Ø¬ÙŠÙ„ Ø§Ù„Ø¯Ø®ÙˆÙ„ØŸ** ØªØ­Ù‚Ù‚ Ù…Ù† Ø£Ù† `.env` ÙŠØ­ØªÙˆÙŠ Ø¹Ù„Ù‰ `NEXTAUTH_SECRET`
+**Can't install?** Install Node.js from [nodejs.org](https://nodejs.org)  
+**Database errors?** Run `npx prisma db push`  
+**Can't login?** Check `.env` has `NEXTAUTH_SECRET`
 
-Ø§Ù„Ù…Ø²ÙŠØ¯: [INSTALL.md](INSTALL.md#troubleshooting)
+More: [INSTALL.md](INSTALL.md)
 
-## Ø§Ù„Ø¯Ø¹Ù…
+## Support
 
-- Ø§Ù„ØªÙˆØ«ÙŠÙ‚: [INSTALL.md](INSTALL.md)
-- Ø§Ù„Ù…Ø´Ø§ÙƒÙ„: [GitHub Issues](https://github.com/hussainshaqsi/Perfect-UHA-calender/issues)
-- Ø§ØªØµÙ„: Ø¯Ø¹Ù… ØªÙ‚Ù†ÙŠØ© Ø§Ù„Ù…Ø¹Ù„ÙˆÙ…Ø§Øª UHA
+- Documentation: [INSTALL.md](INSTALL.md)
+- Issues: [GitHub Issues](https://github.com/hussainshaqsi/Perfect-UHA-calender/issues)
+- Contact: UHA IT support
 
-## Ø§Ù„ØªØ±Ø®ÙŠØµ
+## License
 
-ØªØ±Ø®ÙŠØµ MIT - Ù…Ø¬Ø§Ù†ÙŠ Ù„Ø·Ù„Ø§Ø¨ UHA
+MIT License - Free for UHA students
 
 ---
 
-**Ù…Ø¨Ù†ÙŠ Ù„Ø·Ù„Ø§Ø¨ UHA** - Ø§Ø¯Ø±Ø³ Ø¨Ø°ÙƒØ§Ø¡ØŒ Ù„ÙŠØ³ Ø¨Ø¬Ù‡Ø¯!
+**Built for UHA students** - Study smarter, not harder!
+
+**Note:** The app itself fully supports Arabic with RTL (right-to-left) text direction. This README is in English for compatibility, but once you install the app, you can switch to full Arabic interface in Settings.
