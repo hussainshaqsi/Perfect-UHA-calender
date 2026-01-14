@@ -2,6 +2,10 @@
 
 > Smart study prioritization for Universite de Haute-Alsace students
 
+**Languages:** [English](README.md) | [FranÃ§ais](README.fr.md) | [Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©](README.ar.md)
+
+---
+
 ## Quick Start
 
 **3 commands to get started:**
@@ -18,21 +22,21 @@ npm run dev                                   # Start at http://localhost:3000
 
 ## Features
 
-- UHA Authentication - Sign up with @uha.fr or @etu.uha.fr  
-- Auto Calendar Sync - Paste iCal URL once, syncs hourly
-- Smart Priorities - AI algorithm for study recommendations  
-- Multi-language - French, English, Arabic (RTL)
-- Mobile-First - Works on all devices
-- Email Detection - French cancellation keywords
-- Task Management - Energy-based organization
+- **UHA Authentication** - Sign up with @uha.fr or @etu.uha.fr  
+- **Auto Calendar Sync** - Paste iCal URL once, syncs hourly
+- **Smart Priorities** - AI algorithm for study recommendations  
+- **Multi-language** - French, English, Arabic (RTL)
+- **Mobile-First** - Works on all devices
+- **Email Detection** - French cancellation keywords
+- **Task Management** - Energy-based organization
 
 ## How It Works
 
-1. Sign up with UHA email
-2. Connect ADE/Moodle calendar URL
-3. Add subjects with difficulty ratings (1-5)
-4. Track exams, SAEs, TPs with weights
-5. Get personalized priorities!
+1. **Sign up** with your UHA email
+2. **Connect** your ADE/Moodle calendar URL
+3. **Add** subjects with difficulty ratings (1-5)
+4. **Track** exams, SAEs, TPs with weights
+5. **Get** personalized priorities!
 
 **Priority Formula:**
 ```
