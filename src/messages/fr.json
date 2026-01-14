@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "subjects": "Matieres",
+    "assessments": "Evaluations",
+    "tasks": "Taches",
+    "calendar": "Calendrier",
+    "settings": "Parametres",
+    "logout": "Deconnexion"
+  },
+  "home": {
+    "title": "Planificateur d'Etudes UHA",
+    "welcome": "Bienvenue dans votre planificateur d'etudes"
+  },
+  "subjects": {
+    "title": "Matieres",
+    "add": "Ajouter une Matiere",
+    "name": "Nom de la Matiere",
+    "code": "Code",
+    "credits": "Credits",
+    "semester": "Semestre"
+  },
+  "assessments": {
+    "title": "Evaluations",
+    "add": "Ajouter une Evaluation",
+    "name": "Nom",
+    "type": "Type",
+    "weight": "Poids (%)",
+    "dueDate": "Date Limite",
+    "estimatedHours": "Heures Estimees"
+  },
+  "tasks": {
+    "title": "Taches",
+    "add": "Ajouter une Tache",
+    "description": "Description",
+    "priority": "Priorite",
+    "completed": "Termine"
+  },
+  "calendar": {
+    "title": "Calendrier",
+    "importICS": "Importer un Fichier ICS",
+    "events": "Evenements"
+  },
+  "settings": {
+    "title": "Parametres",
+    "language": "Langue",
+    "calendarSync": "Synchronisation du Calendrier",
+    "iCalUrl": "URL iCal",
+    "save": "Enregistrer"
+  },
+  "auth": {
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "email": "Email",
+    "password": "Mot de passe",
+    "name": "Nom"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "subjects": "المواد",
+    "assessments": "التقييمات",
+    "tasks": "المهام",
+    "calendar": "التقويم",
+    "settings": "الإعدادات",
+    "logout": "تسجيل الخروج"
+  },
+  "home": {
+    "title": "منظم الدراسة UHA",
+    "welcome": "مرحبا في مخطط الدراسة الخاص بك"
+  },
+  "subjects": {
+    "title": "المواد",
+    "add": "إضافة مادة",
+    "name": "اسم المادة",
+    "code": "الرمز",
+    "credits": "الساعات",
+    "semester": "الفصل"
+  },
+  "assessments": {
+    "title": "التقييمات",
+    "add": "إضافة تقييم",
+    "name": "الاسم",
+    "type": "النوع",
+    "weight": "الوزن (%)",
+    "dueDate": "تاريخ التسليم",
+    "estimatedHours": "الساعات المقدرة"
+  },
+  "tasks": {
+    "title": "المهام",
+    "add": "إضافة مهمة",
+    "description": "الوصف",
+    "priority": "الأولوية",
+    "completed": "مكتمل"
+  },
+  "calendar": {
+    "title": "التقويم",
+    "importICS": "استيراد ملف ICS",
+    "events": "الأحداث"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "language": "اللغة",
+    "calendarSync": "مزامنة التقويم",
+    "iCalUrl": "رابط iCal",
+    "save": "حفظ"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "register": "التسجيل",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "name": "الاسم"
+  }
+}

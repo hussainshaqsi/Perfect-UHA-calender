@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "home": "Home",
+    "subjects": "Subjects",
+    "assessments": "Assessments",
+    "tasks": "Tasks",
+    "calendar": "Calendar",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "home": {
+    "title": "UHA Study Prioritizer",
+    "welcome": "Welcome to your study planner"
+  },
+  "subjects": {
+    "title": "Subjects",
+    "add": "Add Subject",
+    "name": "Subject Name",
+    "code": "Code",
+    "credits": "Credits",
+    "semester": "Semester"
+  },
+  "assessments": {
+    "title": "Assessments",
+    "add": "Add Assessment",
+    "name": "Name",
+    "type": "Type",
+    "weight": "Weight (%)",
+    "dueDate": "Due Date",
+    "estimatedHours": "Estimated Hours"
+  },
+  "tasks": {
+    "title": "Tasks",
+    "add": "Add Task",
+    "description": "Description",
+    "priority": "Priority",
+    "completed": "Completed"
+  },
+  "calendar": {
+    "title": "Calendar",
+    "importICS": "Import ICS File",
+    "events": "Events"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "calendarSync": "Calendar Sync",
+    "iCalUrl": "iCal URL",
+    "save": "Save"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name"
+  }
+}
