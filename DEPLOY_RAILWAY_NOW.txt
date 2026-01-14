@@ -1,0 +1,92 @@
+═══════════════════════════════════════════════════════════════
+  DEPLOY TO RAILWAY - COPY & PASTE GUIDE
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Go to Railway
+→ https://railway.app
+→ Click "Login with GitHub"
+
+STEP 2: Create Project
+→ Click "New Project"
+→ Select "Deploy from GitHub repo"
+→ Choose: hussainshaqsi/Perfect-UHA-calender
+
+STEP 3: Add Database
+→ Click "+ New"
+→ Select "Database" → "Add PostgreSQL"
+
+STEP 4: Configure App Service
+→ Click on your app (NOT the database)
+→ Go to "Variables" tab
+→ Click "+ New Variable"
+
+Add these 3 variables:
+
+┌─────────────────────────────────────────────────────────────┐
+│ Variable Name: NEXTAUTH_SECRET                              │
+│ Value: APMD7IlwjgxUnbz3N6jcYKTdIjU1P3+BhmpYnGDjRgk=         │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│ Variable Name: NODE_ENV                                     │
+│ Value: production                                           │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│ Variable Name: DATABASE_URL                                 │
+│ Click "Add Reference" → PostgreSQL → DATABASE_URL           │
+└─────────────────────────────────────────────────────────────┘
+
+STEP 5: Configure Build
+→ Go to "Settings" tab
+→ Find "Build Command" and paste:
+
+npm run railway:build
+
+→ Find "Start Command" and paste:
+
+npm run railway:start
+
+STEP 6: Deploy
+→ Click "Deploy" (top right corner)
+→ Wait 2-3 minutes
+→ Watch logs for "Deployment successful"
+
+STEP 7: Get URL
+→ Go to "Settings" → "Domains"
+→ Click "Generate Domain"
+→ Copy your URL (e.g., https://xxx.up.railway.app)
+
+STEP 8: Add Final Variable
+→ Go back to "Variables"
+→ Add one more:
+
+┌─────────────────────────────────────────────────────────────┐
+│ Variable Name: NEXTAUTH_URL                                 │
+│ Value: https://your-railway-url.up.railway.app              │
+│ (paste your actual Railway URL from step 7)                 │
+└─────────────────────────────────────────────────────────────┘
+
+Railway will auto-redeploy!
+
+STEP 9: TEST IT! 🎉
+→ Visit your Railway URL
+→ Click "Register"
+→ Use email ending with @uha.fr
+→ Login and enjoy!
+
+═══════════════════════════════════════════════════════════════
+  THAT'S IT! YOUR APP IS LIVE! 🚀
+═══════════════════════════════════════════════════════════════
+
+COST: FREE ($5/month credit, app uses ~$2-3)
+
+AUTO-DEPLOY: Push to GitHub main branch = auto-deploy
+
+LOGS: Click app → "Deployments" → Latest → View logs
+
+DATABASE: Click PostgreSQL service → "Data" tab to see tables
+
+HELP: Check START_RAILWAY.md or RAILWAY_DEPLOY.md for details
+
+═══════════════════════════════════════════════════════════════
